@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Drugs.com</title>
+</head>
+<body>
+<p>Search reviews from <a href="https://www.drugs.com/" target="_blank">Drugs.com</a> for a specific keyword</p>
+
+<form action="{% url 'result' %}">
+    Drug Name: &nbsp
+    <input type="text" name="drug">
+    <br />
+    Keyword: &nbsp; &nbsp; &nbsp
+    <input type="text" name="keyword">
+    <br /><br />
+    <input type="submit" value="Find Reviews"/>
+</form>
+
+</body>
+</html>

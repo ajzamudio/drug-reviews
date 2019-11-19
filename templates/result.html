@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Drugs.com</title>
+</head>
+<body>
+
+{% block content %}
+<a href="{% url 'home' %}">Return Home</a>
+<br/><br/>
+<p><b>{{length}}</b> results for <b>{{drug}}</b> with keyword <b>{{keyword}}</b>
+<br/><a href={{link}} target="_blank">Link to all comments</a>
+</p>
+{{df | safe}}
+{% endblock %}
+
+<br />
+
+
+</body>
+</html>
