@@ -78,4 +78,3 @@ def result(request):
 
     return render(request, 'result.html',{'df':df,'drug':drug,'keyword':keyword,'length':length, 'link':link})
 
-#note
